@@ -1,8 +1,7 @@
 import Profile from './Profile/Profile';
-// import data from '../user.json';
+import user from 'user.json';
 
-export default function App(data) {
-  console.log(data);
+export default function App() {
   return (
     <div
       style={{
@@ -14,7 +13,13 @@ export default function App(data) {
         color: '#010101',
       }}
     >
-      <Profile userProfile={data} />
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
     </div>
   );
 }
