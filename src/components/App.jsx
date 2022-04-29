@@ -1,5 +1,5 @@
-import data from '../user';
 import Profile from './Profile/Profile';
+// import data from '../user.json';
 
 export default function App(data) {
   console.log(data);
