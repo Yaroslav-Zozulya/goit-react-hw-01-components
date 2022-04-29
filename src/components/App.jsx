@@ -2,7 +2,7 @@ import data from '../user';
 import Profile from './Profile/Profile';
 
 export default function App(data) {
-  console.log(test);
+  console.log(data);
   return (
     <div
       style={{
