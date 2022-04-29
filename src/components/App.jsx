@@ -1,4 +1,8 @@
-export const App = () => {
+import data from '../user';
+import Profile from './Profile/Profile';
+
+export default function App(data) {
+  console.log(test);
   return (
     <div
       style={{
@@ -7,10 +11,10 @@ export const App = () => {
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
       }}
     >
-      React homework template
+      <Profile userProfile={data} />
     </div>
   );
-};
+}
