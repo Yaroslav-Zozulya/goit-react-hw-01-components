@@ -13,7 +13,7 @@ export default function App() {
         color: '#010101',
       }}
     >
-      <Prsofile
+      <Prsasdofile
         username={user.username}
         tag={user.tag}
         location={user.location}
