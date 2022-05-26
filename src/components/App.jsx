@@ -13,7 +13,7 @@ export default function App() {
         color: '#010101',
       }}
     >
-      <Pprofile
+      <Pasdrofile
         username={user.username}
         tag={user.tag}
         location={user.location}
