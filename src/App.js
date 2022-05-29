@@ -1,5 +1,7 @@
 import Profile from './components/Profile/Profile';
+import Statistic from 'components/Statistic/Statistic';
 import user from 'user.json';
+import data from 'data.json';
 
 export default function App() {
   return (
@@ -7,6 +9,7 @@ export default function App() {
       style={{
         height: '100vh',
         display: 'flex',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
@@ -20,6 +23,7 @@ export default function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
+      <Statistic title="Upload stats" stats={data} />
     </div>
   );
 }

@@ -10,14 +10,19 @@
 }
 
 .avatar {
-  margin: 0 auto;
+  margin: 0 auto 15px auto;
   width: 100px;
   height: 100px;
   border-radius: 50%;
 }
 
 .name {
+  margin-bottom: 10px;
   font-weight: 700;
+}
+
+.tag {
+  margin-bottom: 10px;
 }
 
 .tag,
