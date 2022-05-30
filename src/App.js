@@ -1,13 +1,17 @@
 import Profile from './components/Profile/Profile';
 import Statistic from 'components/Statistic/Statistic';
-import user from 'user.json';
-import data from 'data.json';
+import FriendList from 'components/FriendList/FriendList';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
+
+import transactions from 'data/transactions.json';
+import user from 'data/user.json';
+import data from 'data/data.json';
+import friendsData from 'data/friends.json';
 
 export default function App() {
   return (
     <div
       style={{
-        height: '100vh',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -24,6 +28,8 @@ export default function App() {
         stats={user.stats}
       />
       <Statistic title="Upload stats" stats={data} />
+      <FriendList friends={friendsData} />
+      <TransactionHistory data={transactions} />
     </div>
   );
 }
