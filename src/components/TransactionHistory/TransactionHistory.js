@@ -13,13 +13,13 @@ function TransactionHistory({ data }) {
       </thead>
 
       <tbody>
-        {data.map((transaction, index) => {
+        {data.map(({ id, amount, type, currency }, index) => {
           let bgColor = index % 2 === 0 ? s.light : s.dark;
           return (
-            <tr key={transaction.id} className={`${s.row} ${bgColor}`}>
-              <td className={s.test}>{transaction.type}</td>
-              <td>{transaction.amount}</td>
-              <td>{transaction.currency}</td>
+            <tr key={id} className={`${s.row} ${bgColor}`}>
+              <td className={s.test}>{type}</td>
+              <td>{amount}</td>
+              <td>{currency}</td>
             </tr>
           );
         })}
